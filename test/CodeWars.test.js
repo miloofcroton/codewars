@@ -7,7 +7,7 @@ describe('array_diff', () => {
 
   const codewars = new CodeWars();
     
-  it('array_diff', () => {
+  it('sample tests', () => {
         
     assert.deepEqual(codewars.array_diff([], [4, 5]), [], 'a was [], b was [4,5]');
     assert.deepEqual(codewars.array_diff([3, 4], [3]), [4], 'a was [3,4], b was [3]');
@@ -25,6 +25,19 @@ describe('Rot13', () => {
 
   it('Test', () => {
     assert.equal(codewars.rot13('Test'), 'Grfg');
+  });
+});
+
+describe('Number of Proper Fractions with Denominator d', () => {
+
+  const codewars = new CodeWars();
+
+  it('sample tests', () => {
+    assert.equal(codewars.properFractions(1), 0);
+    assert.equal(codewars.properFractions(2), 1);
+    assert.equal(codewars.properFractions(5), 4);
+    assert.equal(codewars.properFractions(15), 8);
+    assert.equal(codewars.properFractions(25), 20);
   });
 });
 
