@@ -20,11 +20,11 @@ describe('Rot13', () => {
     const codewars = new CodeWars();
 
     it('test', () => {
-        assert.equal('grfg', codewars.rot13('test'));
+        assert.equal(codewars.rot13('test'), 'grfg');
     });
 
     it('Test', () => {
-        assert.equal('Grfg', codewars.rot13('Test'));
+        assert.equal(codewars.rot13('Test'), 'Grfg');
     });
 });
 
