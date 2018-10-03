@@ -32,12 +32,22 @@ describe('Number of Proper Fractions with Denominator d', () => {
 
   const codewars = new CodeWars();
 
-  it('sample tests', () => {
+  it('sample test', () => {
     assert.equal(codewars.properFractions(1), 0);
+  });
+  it('sample test', () => {
     assert.equal(codewars.properFractions(2), 1);
+  });
+  it('sample test', () => {
     assert.equal(codewars.properFractions(5), 4);
+  });
+  it('sample test', () => {
     assert.equal(codewars.properFractions(15), 8);
+  });
+  it('sample test', () => {
     assert.equal(codewars.properFractions(25), 20);
   });
 });
+
+
 
