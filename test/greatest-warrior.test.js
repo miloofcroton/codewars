@@ -2,12 +2,14 @@
 
 const assert = require('assert');
 
-const Warrior = require('../lib/Warrior');
+const Warrior = require('../lib/greatest-warrior');
 
 
 describe("Kata Tests", () => {
   it("Standard Tests", () => {
     var Goku = new Warrior();
+
+    console.log(Goku.level);
 
     assert.deepEqual(Goku.level(), 1, "All warriors must start as LV 1");
     assert.deepEqual(Goku.rank(), "Pushover", "All warriors must start as a Pushover");
